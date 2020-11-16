@@ -1,0 +1,24 @@
+<li class="post-summary">
+	{{ if .Params.image }}
+		<div class="post-summary-image">
+			<img src="{{ .Params.image }}" alt="Photo of {{ .Title }}">
+		</div>
+	{{ end }}
+
+	<div class="post-summary-content {{ if .Params.image }}has-post-summary-image{{ end }}">
+		<h3 class="post-summary-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+		{{ .Render "summary-details" }}
+
+		{{ $authorsBundle := .Site.GetPage "/authors" }}
+		{{ $author_pattern := printf "%s*" .Params.author_staff_member }}
+		{{ $authors := $authorsBundle.Resources.Match $author_pattern }}
+
+		{{ range $authors }}
+			<p class="post-summary-author">
+				<img src="{{ .Params.image }}" alt="Photo of {{ .Params.name }}" width="30" height="30"> {{ .Params.name }}
+			</p>
+		{{ end }}
+	</div>
+
+	<p class="post-summary-excerpt">{{ .Summary }}</p>
+</li>

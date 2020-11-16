@@ -1,0 +1,16 @@
+{{ define "main" }}
+	<article class="content">
+		{{ .Content }}
+
+		<ol class="post-list">
+			{{ range .Paginator.Pages }}
+				{{ .Render "summary" }}
+			{{ end }}
+		</ol>
+
+		{{ template "_internal/pagination.html" . }}
+	</article>
+{{ end }}
+
+
+

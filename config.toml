@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Hugustice"
+SectionPagesMenu = "main"
+
+[params]
+backgroundImagePath = "/uploads/building.jpg"

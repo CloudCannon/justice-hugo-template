@@ -1,0 +1,10 @@
+<p class="post-summary-details">
+	{{ with .Date }}
+		{{ .Format "January 2, 2006" }}
+	{{ end }}
+
+	{{ range .Params.categories }}
+		&bull;
+		<a class="post-summary-category" href="/categories/{{ . | urlize }}/">{{ . }}</a>
+	{{ end }}
+</p>

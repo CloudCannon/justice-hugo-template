@@ -1,0 +1,14 @@
+<header
+	style="background-image: url('{{ $.Site.Params.backgroundImagePath }}');"
+	{{ if .Params.large_header }}class="main-hero"{{ end }}>
+	<div class="container">
+		<h1><a href="/">{{ $.Site.Data.company.title }}</a></h1>
+		<nav>
+			{{ if .Site.Menus.main }}
+				<ul>
+					{{ range .Site.Menus.main }}<li><a href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a></li>{{ end }}
+				</ul>
+			{{ end }}
+		</nav>
+	</div>
+</header>

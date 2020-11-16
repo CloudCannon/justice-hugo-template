@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+		{{ hugo.Generator }}
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento|Vollkorn:400,400i,700,700i">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		{{ $sass := resources.Get "/sass/main.scss" }}
+		{{ $style := $sass | resources.ToCSS }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+		{{ range .Site.Params.custom_css }}
+			<link rel="stylesheet" href="{{ relURL (.) }}">
+		{{ end }}
+
+		{{ if .OutputFormats.Get "RSS" }}
+			{{ with .OutputFormats.Get "RSS" }}
+				<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+				<link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+			{{ end }}
+		{{ end }}
+
+		{{- template "_internal/opengraph.html" . -}}
+		{{- template "_internal/schema.html" . -}}
+		{{- template "_internal/twitter_cards.html" . -}}
+
+		{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+			{{ template "_internal/google_analytics_async.html" . }}
+		{{ end }}
+	</head>
+
+	<body>
+		{{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+
+		<section class="main">
+			<div class="container">
+				{{ block "page-header" . }}{{ partial "page-header.html" . }}{{ end }}
+				{{ block "main" . }}{{ end }}
+			</div>
+		</section>
+
+		{{ if (and (eq .Params.call_to_action "Map") (isset .Site.Params "google_maps_javascript_api_key")) }}
+			<section class="map-section">
+				<div id="map"></div>
+			</section>
+		{{ else if eq .Params.call_to_action "Contact" }}
+			<section class="quote-section">
+				<p class="container editable">
+					<a href="/contact/">Contact us</a> today to find out how we can help you. Your first consultation is free.
+				</p>
+			</section>
+		{{ else }}
+			<section class="quote-section">
+				<p class="container editable">
+					<a href="/advice/">Read our published advice</a> for an introduction and quick tips on various areas of the law.
+				</p>
+			</section>
+		{{ end }}
+
+		{{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
+	</body>
+</html>

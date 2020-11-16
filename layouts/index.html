@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div>{{ .Content }}</div>
+
+  <div class="testimonials">
+    {{ range .Params.testimonials }}
+      <blockquote class="testimonial">
+        <p class="testimonial-message">{{ .message }}</p>
+        <p class="testimonial-author"><img src="{{ .image }}" alt="Photo of {{ .name }}"> {{ .name }}</p>
+      </blockquote>
+    {{ end }}
+  </div>
+
+{{ end }}
