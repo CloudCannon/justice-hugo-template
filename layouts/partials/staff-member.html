@@ -1,14 +1,14 @@
 <div class="staff-details">
 	<div class="staff-image">
-		<img src="{{ .Params.Image }}" alt="Staff photo for {{ .Params.Name }}" width="120" height="120">
+		<img src="{{ .image }}" alt="Staff photo for {{ .name }}" width="120" height="120">
 	</div>
 	<ul class="staff-info">
-		<li>{{ .Params.Name }}</li>
-		<li><small>{{ .Params.Credentials }}</small></li>
-		<li><a href="tel:{{ $.Site.Data.company.contact_phone_number }}">{{ $.Site.Data.company.contact_phone_number }}</a> ext {{ .Params.PhoneExtension }}</li>
+		<li>{{ .name }}</li>
+		<li><small>{{ .credentials }}</small></li>
+		<li><a href="tel:{{ site.Data.company.contact_phone_number }}">{{ site.Data.company.contact_phone_number }}</a> ext {{ .phone_extension }}</li>
 	</ul>
 </div>
 
 <div class="staff-bio">
-	<p>{{ .Content }}</p>
+	<p>{{ .description }}</p>
 </div>

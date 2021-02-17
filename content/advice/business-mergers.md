@@ -3,7 +3,7 @@ title: Business Mergers
 date: 2016-08-10T00:00:00+13:00
 categories:
   - Business
-author_staff_member: jane-doe
+author: jane-doe
 image: "https://unsplash.it/600/450?image=737&a=.png"
 large_header: false
 ---
@@ -21,7 +21,6 @@ An acquisition or takeover is the purchase of one business or company by another
 Achieving acquisition success has proven to be very difficult, while various studies have shown that 50% of acquisitions were unsuccessful. "Serial acquirers" appear to be more successful with M&A than companies who only make an acquisition occasionally (see Douma & Schreuder, 2013, chapter 13). The new forms of buy out created since the crisis are based on serial type acquisitions known as an ECO Buyout which is a co-community ownership buy out and the new generation buy outs of the MIBO (Management Involved or Management & Institution Buy Out) and MEIBO (Management & Employee Involved Buy Out).
 
 The combined evidence suggests that the shareholders of acquired firms realize significant positive "abnormal returns" while shareholders of the acquiring company are most likely to experience a negative wealth effect. The overall net effect of M&A transactions appears to be positive: almost all studies report positive returns for the investors in the combined buyer and target firms. This implies that M&A creates economic value, presumably by transferring assets to management teams that operate them more efficiently (see Douma & Schreuder, 2013, chapter 13).
-
 
 ![](https://unsplash.it/960/350?image=864){: width="960" height="350"}
 

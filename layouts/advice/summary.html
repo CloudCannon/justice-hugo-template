@@ -9,13 +9,10 @@
 		<h3 class="post-summary-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 		{{ .Render "summary-details" }}
 
-		{{ $authorsBundle := .Site.GetPage "/authors" }}
-		{{ $author_pattern := printf "%s*" .Params.author_staff_member }}
-		{{ $authors := $authorsBundle.Resources.Match $author_pattern }}
-
-		{{ range $authors }}
+		{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+		{{- if $author -}}
 			<p class="post-summary-author">
-				<img src="{{ .Params.image }}" alt="Photo of {{ .Params.name }}" width="30" height="30"> {{ .Params.name }}
+				<img src="{{ $author.image }}" alt="Photo of {{ $author.name }}" width="30" height="30"> {{ $author.name }}
 			</p>
 		{{ end }}
 	</div>

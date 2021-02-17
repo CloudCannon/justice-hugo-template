@@ -1,7 +1,10 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Hugustice"
-SectionPagesMenu = "main"
+title = "Justice Hugo Template"
+summaryLength = 20
+
+[taxonomies]
+category = "categories"
 
 [params]
 backgroundImagePath = "/uploads/building.jpg"

@@ -1,6 +1,8 @@
 ---
 title: Advice
 menu:
+  main:
+    weight: 4
   footer:
     weight: 5
 ---

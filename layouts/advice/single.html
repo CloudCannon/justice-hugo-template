@@ -3,17 +3,11 @@
 		{{ .Render "summary-details" }}
 		<div>{{ .Content }}</div>
 
-		{{ $authorsBundle := .Site.GetPage "/authors" }}
-		{{ $author_pattern := printf "%s*" .Params.author_staff_member }}
-		{{ $authors := $authorsBundle.Resources.Match $author_pattern }}
-
-		{{ range $authors }}
+		{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+		{{- if $author -}}
 			<h2>Meet the author</h2>
-			<div class="post-author staff">
-				{{ partial "staff-member.html" . }}
-			</div>
+			<div class="post-author staff">{{ partial "staff-member.html" $author }}</div>
 		{{ end }}
-
 
 		<h2>Keep reading</h2>
 		<ol class="post-links post-list">

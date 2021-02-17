@@ -3,30 +3,29 @@
 		{{ .Content }}
 	</article>
 
-  {{ $authorsBundle := .Site.GetPage "/authors" }}
-	{{ $authors := $authorsBundle.Resources }}
-
-	{{ if $authors }}
+	{{ if .Site.Data.authors }}
 		<p>Meet the members of our capable team:</p>
 
 	  <ul class="staff-list">
-			{{ range $authors }}
-				<li class="staff">
-					<div class="staff-details">
-						<div class="staff-image">
-							<img src="{{ .Params.Image }}" alt="Staff photo for {{ .Params.Name }}" width="120" height="120">
+			{{ range .Site.Data.authors }}
+				{{ if .is_staff_member }}
+					<li class="staff">
+						<div class="staff-details">
+							<div class="staff-image">
+								<img src="{{ .image }}" alt="Staff photo for {{ .name }}" width="120" height="120">
+							</div>
+							<ul class="staff-info">
+								<li>{{ .name }}</li>
+								<li><small>{{ .credentials }}</small></li>
+								<li><a href="tel:{{ $.Site.Data.company.contact_phone_number }}">{{ $.Site.Data.company.contact_phone_number }}</a> ext {{ .phone_extension }}</li>
+							</ul>
 						</div>
-						<ul class="staff-info">
-							<li>{{ .Params.Name }}</li>
-							<li><small>{{ .Params.Credentials }}</small></li>
-							<li><a href="tel:{{ $.Site.Data.company.contact_phone_number }}">{{ $.Site.Data.company.contact_phone_number }}</a> ext {{ .Params.PhoneExtension }}</li>
-						</ul>
-					</div>
 
-					<div class="staff-bio">
-						<p>{{ .Content }}</p>
-					</div>
-				</li>
+						<div class="staff-bio">
+							<p>{{ .description }}</p>
+						</div>
+					</li>
+				{{ end }}
 			{{ end }}
 		</ul>
 	{{ end }}

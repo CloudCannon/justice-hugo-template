@@ -1,6 +1,6 @@
 <footer>
 	<div class="container">
-		<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
+		<p class="editor-link"><a href="cloudcannon:collections/data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
 
 		<div class="footer-columns">
 			{{ if .Site.Menus.footer }}
@@ -10,7 +10,7 @@
 					</li>
 					{{ range .Site.Menus.footer }}
 						<li>
-							<a target="_blank" rel="noopener" href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a>
+							<a href="{{ .URL }}" title="{{ .Name }} page">{{ .Name }}</a>
 						</li>
 					{{ end }}
 				</ul>
@@ -35,7 +35,7 @@
 					<h2>{{ $.Site.Data.company.title }}</h2>
 				</li>
 				<li>{{ $.Site.Data.company.description }}</li>
-				<li><a href="/post/index.xml">{{ partial "social-icon.html" (dict "context" . "name" "RSS") }} Subscribe with RSS</a></li>
+				<li><a href="/advice/index.xml">{{ partial "social-icon.html" (dict "context" . "name" "RSS") }} Subscribe with RSS</a></li>
 			</ul>
 		</div>
 	</div>
