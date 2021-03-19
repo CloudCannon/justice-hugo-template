@@ -12,7 +12,7 @@ Flipping is a term used primarily in the US to describe purchasing a revenue-gen
 
 The term "flipping" is used by real estate investors to describe "residential redevelopment". Redevelopment of distressed or abandoned properties or neighborhoods has sometimes been linked to malicious and unscrupulous acts in the post housing bubble era. The term "flipping" is frequently used both as a descriptive term for schemes involving market manipulation and other illegal conduct and as a derogatory term for legal real estate investing strategies that are perceived by some to be unethical or socially destructive. In the United Kingdom the term is used to describe a technique whereby Members of Parliament were found to be switching their second home between several houses, which had the effect of allowing them to maximize their taxpayer funded allowances.
 
-<img src="https:/unsplash.it/960/350?image=690" width="960" height="350" alt="A placeholder image" />
+<img src="https://unsplash.it/960/350?image=690" width="960" height="350" alt="A placeholder image" />
 
 ### Types
 
@@ -26,7 +26,7 @@ In many cases, if another buyer is not found before the end of the inspection pe
 
 It is not uncommon for a property to be assigned multiple times and for a few wholesalers to make money in a transaction from the seller to the end buyer. The original wholesaler enters into a contract to purchase a property and then assigns or sells their rights to that contract to another investor. That investor then assigns their rights to said contract to a third investor and so forth. Examples of distress could be a property damaged by fire, flood, hurricane or a homeowner that is facing foreclosure and is about to lose their home and is selling it for substantially less than fair market value. The practice of buying real estate at substantially below market value is called Distressed Real Estate Investing or Wholesale Real Estate Investing hence the term "wholesaler".
 
-<img src="https:/unsplash.it/960/350?image=670" width="960" height="350" alt="A placeholder image" />
+<img src="https://unsplash.it/960/350?image=670" width="960" height="350" alt="A placeholder image" />
 
 #### Real estate flipping
 
@@ -38,7 +38,7 @@ the property's condition (e.g., the house needs major renovations and/or repairs
 the owner(s) needing to sell a property quickly (e.g., relocation, divorce, pending foreclosure).
 The investor will then perform necessary renovations and repairs, and attempt to make a profit by selling the house quickly at a higher price. The "fix and flip" scenario is profitable to investors because the average homebuyer lacks the time and funds to repairs and renovations, so they look for a property that is ready to move into. Also, most traditional mortgage lenders require the home to be habitable with no significant repairs.
 
-<img src="https:/unsplash.it/960/350?image=442" width="960" height="350" alt="A placeholder image" />
+<img src="https://unsplash.it/960/350?image=442" width="960" height="350" alt="A placeholder image" />
 
 #### Second home flipping
 
@@ -56,6 +56,6 @@ Similar to real estate flipping, car flipping is the process of buying automobil
 
 In the United States, car flipping can be a hobby for car enthusiasts, or a primary business in the form of state licensed car dealers. Flipping cars is legal if the vehicles are titled in the person's name or processed through a state licensed dealership. Many states have laws and regulation limiting the number of vehicles a person can flip within each year unless they are a dealer or associate. This number varies from state to state, from 2 to 10. Car flipping has a larger market and requires less investment than flipping real estate.
 
-<img src="https:/unsplash.it/960/350?image=655" width="960" height="350" alt="A placeholder image" />
+<img src="https://unsplash.it/960/350?image=655" width="960" height="350" alt="A placeholder image" />
 
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Flipping).
