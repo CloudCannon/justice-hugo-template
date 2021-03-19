@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<article class="content">
-		{{ .Content }}
+		<div>{{ .Content }}</div>
 
 		<div class="columns">
 			<div class="column">
@@ -75,7 +75,7 @@
 					position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
 				});
 
-				google.maps.event.addDomListener(window, 'resize', function() {
+				google.maps.event.addDomListener(window, 'resize', function () {
 					map.setCenter(myOptions.center);
 				});
 			}

@@ -1,8 +1,8 @@
 {{ define "main" }}
   <article class="content">
-    {{ .Content }}
+    <div>{{ .Content }}</div>
 
-    <p>You're currently looking at advice categorised under <strong>{{ .Title }}</strong>. <a href="/advice/">View all advice</a> instead.</p>
+    <p>You're currently looking at posts categorised under <strong>{{ .Title }}</strong>. <a href="/blog/">View all posts</a> instead.</p>
 
     <ol class="post-list">
       {{ range .Paginator.Pages }}

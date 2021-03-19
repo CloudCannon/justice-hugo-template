@@ -1,6 +1,6 @@
 name: Unknown
 description: This is the default when no matching author is found.
-image: "//placekitten.com/440/440?a=.png"
+image: "https://placekitten.com/440/440?a=.png"
 credentials:
 phone_extension:
 is_staff_member: false

@@ -19,5 +19,14 @@
 				{{ .Render "summary" }}
 			{{ end }}
 		</ol>
+
+
+		{{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
+			{{ if .Site.DisqusShortname }}
+				<h2>Have your say</h2>
+				{{ partial "disqus.html" . }}
+			{{ end }}
+		{{ end }}
+
 	</article>
 {{ end }}

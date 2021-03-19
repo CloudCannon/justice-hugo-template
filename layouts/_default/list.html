@@ -1,6 +1,6 @@
 {{ define "main" }}
 	<article class="content">
-		{{ .Content }}
+		<div>{{ .Content }}</div>
 
 		<ol class="post-list">
 			{{ range .Paginator.Pages }}
@@ -8,9 +8,22 @@
 			{{ end }}
 		</ol>
 
-		{{ template "_internal/pagination.html" . }}
+		{{ if gt .Paginator.TotalPages 1 }}
+			<div class="pagination">
+				{{ if .Paginator.HasPrev }}
+					<a href="{{ .Paginator.Prev.URL | relURL }}" class="previous btn">&larr; Newer posts</a>
+				{{ else }}
+					<span></span>
+				{{ end }}
+
+				<span>{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+
+				{{ if .Paginator.HasNext }}
+					<a href="{{ .Paginator.Next.URL | relURL }}" class="next btn">Older posts &rarr;</a>
+				{{ else }}
+					<span></span>
+				{{ end }}
+			</div>
+		{{ end }}
 	</article>
 {{ end }}
-
-
-
