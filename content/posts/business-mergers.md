@@ -1,11 +1,11 @@
 ---
 title: Business Mergers
-date: 2016-08-10T00:00:00+13:00
+date: 2020-08-10T00:00:00+13:00
 categories:
   - Business
 author: jane-doe
 image: "https://unsplash.it/600/450?image=737&a=.png"
-large_header: false
+draft: false
 ---
 
 Mergers and acquisitions are transactions in which the ownership of companies, other business organizations or their operating units are transferred or combined.

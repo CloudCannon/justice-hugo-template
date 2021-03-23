@@ -26,6 +26,9 @@ enableRobotsTXT = true
   call_to_actions = ["Contact", "Blog", "Map"]
   social_icons = ["Facebook", "Instagram", "LinkedIn", "Pinterest", "Tumblr", "Twitter", "YouTube", "RSS"]
 
+[params._options.type]
+  hidden = true
+
 [params._comments]
   large_header = "Toggles the size of the top banner."
   show_in_navigation = "Toggles a link in the top banner."
