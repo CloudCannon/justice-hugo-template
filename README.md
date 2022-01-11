@@ -3,7 +3,7 @@
 Law firm themed business template for Hugo. Browse through a [live demo](https://loved-wood.cloudvent.net/).
 Increase the web presence of a law firm or business with this configurable theme.
 
-![Justice template screenshot](images/_screenshot.png)
+![_screenshot](https://user-images.githubusercontent.com/25014150/149033805-1ecc5e9a-427f-40b7-87ba-ff9392183b8c.png)
 
 Justice was made by [CloudCannon](https://cloudcannon.com/), a Jamstack platform for the whole team.
 
