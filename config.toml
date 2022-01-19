@@ -21,26 +21,3 @@ enableRobotsTXT = true
   description = "Hugo template with example content for a law firm."
   images = ["siteicon.png"]
   title = "Justice Template"
-
-[params._selectData]
-  call_to_actions = ["Contact", "Blog", "Map"]
-  social_icons = ["Facebook", "Instagram", "LinkedIn", "Pinterest", "Tumblr", "Twitter", "YouTube", "RSS"]
-
-[params._options.type]
-  hidden = true
-
-[params._comments]
-  large_header = "Toggles the size of the top banner."
-  show_in_navigation = "Toggles a link in the top banner."
-  author_staff_member = "The staff member writing this post."
-  call_to_action = "Type of request shown at the bottom of this page."
-  background_image_path = "Image shown in the top banner, blank for the default."
-  testimonials = "Update, add or remove testimonials."
-  map = "Update the map location and display settings."
-  latitude = "Coordinates for the center marker on the map."
-  longitude = "Coordinates for the center marker on the map."
-  zoom = "The zoom level for the map."
-  phone_extension = "The digits after dialing the company phone."
-  credentials = "Shown as subtext on staff member summaries."
-  contact_email_address = "Address for the contact form to send to."
-  new_window = "Whether the link opens a new browser tab/window."

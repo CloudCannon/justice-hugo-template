@@ -1,0 +1,46 @@
+_select_data:
+  call_to_actions:
+    - Contact
+    - Blog
+    - Map
+  social_icons:
+    - Facebook
+    - Instagram
+    - LinkedIn
+    - Pinterest
+    - Tumblr
+    - Twitter
+    - YouTube
+    - RSS
+
+_inputs:
+  type:
+    hidden: true
+  large_header:
+    comment: Toggles the size of the top banner.
+  show_in_navigation:
+    comment: Toggles a link in the top banner.
+  author_staff_member:
+    comment: The staff member writing this post.
+  call_to_action:
+    comment: Type of request shown at the bottom of this page.
+  background_image_path:
+    comment: Image shown in the top banner, blank for the default.
+  testimonials:
+    comment: Update, add or remove testimonials.
+  map:
+    comment: Update the map location and display settings.
+  latitude:
+    comment: Coordinates for the center marker on the map.
+  longitude:
+    comment: Coordinates for the center marker on the map.
+  zoom:
+    comment: The zoom level for the map.
+  phone_extension:
+    comment: The digits after dialing the company phone.
+  credentials:
+    comment: Shown as subtext on staff member summaries.
+  contact_email_address:
+    comment: Address for the contact form to send to.
+  new_window:
+    comment: Whether the link opens a new browser tab/window.
