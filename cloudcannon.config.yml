@@ -1,18 +1,3 @@
-_select_data:
-  call_to_actions:
-    - Contact
-    - Blog
-    - Map
-  social_icons:
-    - Facebook
-    - Instagram
-    - LinkedIn
-    - Pinterest
-    - Tumblr
-    - Twitter
-    - YouTube
-    - RSS
-
 _inputs:
   type:
     hidden: true
@@ -23,7 +8,13 @@ _inputs:
   author_staff_member:
     comment: The staff member writing this post.
   call_to_action:
+    type: select
     comment: Type of request shown at the bottom of this page.
+    options:
+      values:
+        - Contact
+        - Blog
+        - Map
   background_image_path:
     comment: Image shown in the top banner, blank for the default.
   testimonials:
