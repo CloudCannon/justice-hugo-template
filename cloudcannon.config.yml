@@ -7,6 +7,11 @@ collections_config:
       - visual
       - content 
   posts:
+    _inputs:
+      categories:
+        type: array
+      categories[*]:
+        type: text
     schemas:
       default: 
         path: schemas/posts.md
