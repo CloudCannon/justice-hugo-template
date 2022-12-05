@@ -1,0 +1,21 @@
+collections_config:
+  pages:
+    schemas: 
+      default:
+        path: schemas/pages.md
+    _enabled_editors:
+      - visual
+      - content 
+  posts:
+    _inputs:
+      categories:
+        type: array
+      categories[*]:
+        type: text
+    schemas:
+      default: 
+        path: schemas/posts.md
+    _enabled_editors:
+      - visual
+      - content 
+        
